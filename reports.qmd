@@ -13,10 +13,14 @@ format:
 editor: source
 ---
 
-### Why you should be using profvis {.smaller}
+### All about reports {.smaller}
 
--   You want to know what to prioritize to improve your application
--   Often what's holding your application back isn't intuitive
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- Custom landing pages with connectwidgets 
+- Dashboards with flexdashboard
+- The latest and greatest: Quarto 
 
 <center>
 
@@ -29,12 +33,108 @@ editor: source
 </center>
 
 ::: notes
--   Investigate server performance issues
--   Profiling (and load testing)
--   Runtime settings
--   Improve data handling (cacheing, storage)
--   Consider async
+
 :::
+
+
+### RMarkdowns {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+### Parameterization {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- Custom landing pages with connectwidgets 
+- Dashboards with flexdashboard
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+### Pretty emails with Blastula {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- Custom landing pages with connectwidgets 
+- Dashboards with flexdashboard
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+### Custom landing pages with connectwidgets {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- Custom landing pages with connectwidgets 
+- Dashboards with flexdashboard
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+### Dashboards with flexdashboard {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- Custom landing pages with connectwidgets 
+- Dashboards with flexdashboard
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+### The latest and greatest: Quarto  {.smaller}
+
+- RMarkdowns 
+- Parameterization
+- Pretty emails with Blastula 
+- The latest and greatest: Quarto 
+
+
+::: notes
+
+:::
+
+## What about Python?
+
+- Jupyter Notebooks 
+- Quarto
+
+-   Python profiling tool: <https://jiffyclub.github.io/snakeviz/>
+-   Python load testing tool: <https://locust.io/>
+
+## Where to go from here?
+
+-   [Shiny in Production by Kelly O'Briant](https://kellobri.github.io/shiny-prod-book/scaling.html)
+-   [Cran whales](https://rstudio.github.io/promises/articles/casestudy.html)
+-   [Cran whales talk](https://www.youtube.com/watch?v=Wy3TY0gOmJw)
+-   [Cran whales article](https://cran.r-project.org/web/packages/promises/vignettes/casestudy.html)
+-   [Profiling in RStudio](https://support.posit.co/hc/en-us/articles/218221837-Profiling-with-RStudio)
+
+
+### Older slides backup
 
 ## Profiling {auto-animate="true"}
 
