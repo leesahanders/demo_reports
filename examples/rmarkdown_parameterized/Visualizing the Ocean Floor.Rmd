@@ -1,0 +1,30 @@
+---
+title: "Visualizing the ocean floor"
+output: html_document
+params:
+  data: 
+    label: "Choose Data:"
+    value: "hawaii"
+    input: select
+    choices: ["hawaii","florida","celt","aleutians"]
+---
+
+```{r include = FALSE}
+library(marmap)
+library(ggplot2)
+library(mapproj)
+```
+
+The [marmap](https://cran.r-project.org/web/packages/marmap/index.html) package provides tools and data for visualizing the ocean floor. Here is an example contour plot of marmap's ``r params$data`` dataset.
+
+```{r echo = FALSE}
+data_name = params$data
+
+#data_name <- c("hawaii","florida","celt","aleutians")[2] # for dev
+
+data(list = data_name)
+autoplot(get(data_name))
+
+# data must be of specific format, refer to: https://rdrr.io/cran/marmap/man/hawaii.html 
+```
+

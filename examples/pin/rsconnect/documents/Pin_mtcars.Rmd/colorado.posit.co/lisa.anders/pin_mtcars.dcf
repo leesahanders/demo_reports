@@ -1,0 +1,13 @@
+name: pin_mtcars
+title: Pin_mtcars
+username: lisa.anders
+account: lisa.anders
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/rsc/__api__
+appId: 14687
+bundleId: 68667
+url: https://colorado.posit.co/rsc/content/3dae5785-607d-451f-8551-820d5a07ae1d/
+when: 1674682622.0487
+lastSyncTime: 1674682622.04872
+asMultiple: FALSE
+asStatic: FALSE

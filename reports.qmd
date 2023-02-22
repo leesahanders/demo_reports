@@ -1,5 +1,5 @@
 ---
-title: "All about reports"
+title: "Reporting with Posit Team"
 author: "Posit Solutions Engineering (Lisa Anders)"
 institute: "Posit, PBC"
 format:
@@ -13,16 +13,13 @@ format:
 editor: source
 ---
 
-### All about reports {.smaller}
-
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- Custom landing pages with connectwidgets 
-- Dashboards with flexdashboard
-- The latest and greatest: Quarto 
+## Outline {.smaller}
 
 <center>
+
+ - RMarkdowns 
+ - Quarto 
+ - Complex workflows with Plumber and Pins
 
 ![](https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png){width="50%"}
 
@@ -33,120 +30,168 @@ editor: source
 </center>
 
 ::: notes
-
-:::
-
-
-### RMarkdowns {.smaller}
-
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- The latest and greatest: Quarto 
-
-
-::: notes
-
-:::
-
-### Parameterization {.smaller}
-
 - RMarkdowns 
 - Parameterization
 - Pretty emails with Blastula 
 - Custom landing pages with connectwidgets 
 - Dashboards with flexdashboard
 - The latest and greatest: Quarto 
+:::
 
+
+## RMarkdowns {.smaller}
+
+::: {layout="[2, 20]"}
+![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
+
+**RMarkdown**
+  -   Fully reproducible notebooks that weave together narrative text and code to product formatted outputs. 
+:::
+
+They are:
+
+ - Easily accessible and testable to ensure accurate results every time
+ - Easily version controlled
+ - Easy to use with ample documentation and examples 
 
 ::: notes
 
 :::
 
-### Pretty emails with Blastula {.smaller}
+## RMarkdowns
 
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- Custom landing pages with connectwidgets 
-- Dashboards with flexdashboard
-- The latest and greatest: Quarto 
+<center>
 
+![](images/rmarkdown.png){width="50%"}
 
-::: notes
-
-:::
-
-### Custom landing pages with connectwidgets {.smaller}
-
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- Custom landing pages with connectwidgets 
-- Dashboards with flexdashboard
-- The latest and greatest: Quarto 
-
-
-::: notes
-
-:::
-
-### Dashboards with flexdashboard {.smaller}
-
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- Custom landing pages with connectwidgets 
-- Dashboards with flexdashboard
-- The latest and greatest: Quarto 
-
-
-::: notes
-
-:::
-
-### The latest and greatest: Quarto  {.smaller}
-
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- The latest and greatest: Quarto 
-
-
-::: notes
-
-:::
-
-## What about Python?
-
-- Jupyter Notebooks 
-- Quarto
-
--   Python profiling tool: <https://jiffyclub.github.io/snakeviz/>
--   Python load testing tool: <https://locust.io/>
-
-## Where to go from here?
-
--   [Shiny in Production by Kelly O'Briant](https://kellobri.github.io/shiny-prod-book/scaling.html)
--   [Cran whales](https://rstudio.github.io/promises/articles/casestudy.html)
--   [Cran whales talk](https://www.youtube.com/watch?v=Wy3TY0gOmJw)
--   [Cran whales article](https://cran.r-project.org/web/packages/promises/vignettes/casestudy.html)
--   [Profiling in RStudio](https://support.posit.co/hc/en-us/articles/218221837-Profiling-with-RStudio)
-
-
-### Older slides backup
-
-## Profiling {auto-animate="true"}
+</center>
 
 <font size="6">
 
-Profile apps to understand where it is spending the bulk of its time. Oftentimes the result is surprising and may point at the issue being a specific function or command rather than needing an overhaul of the app itself or changing how it is running on the server.
+General example: 
+
+- [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-penguins)
+- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/fe7d605a-bb96-4e8a-9ef4-b633140a05d7/access/5957)
+
+</font>
+
+
+## RMarkdowns
+
+<center>
+
+![](images/rmarkdown_param.png){width="50%"}
+
+</center>
+
+<font size="6">
+
+Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need. 
+
+When deploying the app it will need to have the source code included so that users can change the input parameter and re-render. 
+
+Parameterized Rmarkdown example: 
+
+- [Code URL](https://github.com/leesahanders/code_sandbox/blob/main/R/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd)
+- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/265af2df-d761-4ec4-9e38-3d789b2e4298/access/5652)
+
+</font>
+
+## Favorite RMarkdown packages {.smaller}
 
 ::: {layout="[2, 20]"}
-![](https://support.posit.co/hc/en-us/article_attachments/206191538/Screen_Shot_2016-04-04_at_2.09.15_PM.png){width="70"}
+![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
 
-**profvis** - Profvis is a tool for helping you to understand how R spends its time.
+**Blastula**
+
+  -   Make it easy to send great looking HTML emails. 
 :::
+
+::: {layout="[2, 20]"}
+![](https://rstudio.github.io/connectwidgets/reference/figures/logo.png){width="70"}
+
+**Connectwidgets**
+
+  -    Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application. 
+:::
+
+::: {layout="[2, 20]"}
+![](https://pkgs.rstudio.com/flexdashboard/reference/figures/logo.png){width="70"}
+
+**Flexdashboard**
+
+  -   Lay out interactive dashboards using groups related visualizations in RMarkdowns. 
+:::
+
+::: notes
+
+:::
+
+## RMarkdown Examples 
+
+Connectwidgets example: 
+
+- [Code URL](https://github.com/leesahanders/posit-demo-content)
+- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/b101e24a-3d96-4a09-9a55-9e649cfd0f24/access/5965)
+
+Blastula example: 
+
+- [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-blastula)
+- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
+
+
+## Quarto 
+
+::: {layout="[2, 20]"}
+![](https://quarto.org/quarto.png){width="60"}
+
+**quarto**
+  -   A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages. 
+:::
+
+Quarto and RMarkdown work similarly, however Quarto was developed to be language agnostic and applied all the learnings from the development of RMarkdown. 
+
+![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png){width="50%"}
+
+
+::: footer
+Image from : [Quarto FAQ](https://quarto.org/docs/faq/rmarkdown.html)
+:::
+
+
+
+## Quarto 
+
+<center>
+
+![](images/quarto-python.png){width="50%"}
+
+</center>
+
+Quarto with Python example: 
+
+ - [Code URL](https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox)
+ - [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/84a42164-6a63-4fe3-af31-474ac56a9bac/access/5930)
+
+
+::: notes
+
+:::
+
+
+
+
+
+## Where to go from here? 
+
+ - Explore all the content options deployable to Connect as well as examples: [Connect User Guide](https://docs.posit.co/connect/user/)
+ 
+Happy Reporting! 
+
+
+
+
+
 
 ``` r
 library(profvis)
@@ -168,166 +213,3 @@ profvis({runApp()})
 Learn more: [profvis](https://rstudio.github.io/profvis/index.html)
 :::
 
-</font>
-
-## Profiling
-
-<font size="6">
-
-<center>
-
-![](https://support.posit.co/hc/en-us/article_attachments/206191538/Screen_Shot_2016-04-04_at_2.09.15_PM.png){width="70%"}
-
-::: {.citation style="font-size: 16px"}
-For more information refer to [the support article](https://rstudio.github.io/profvis/index.html)
-:::
-
-</center>
-
-</font>
-
-::: notes
-On top is the code, and on the bottom is a flame graph. In the flame graph, the horizontal direction represents time in milliseconds, and the vertical direction represents the call stack. Looking at the bottom-most items on the stack, most of the time, about 2 seconds, is spent in plot, and then a much smaller amount of time is spent in lm, and almost no time at all is spent in abline -- it doesn't even show up on the flame graph.
-
-Each block in the flame graph represents a call to a function, or possibly multiple calls to the same function. The width of the block is proportional to the amount of time spent in that function. When a function calls another function, another block is added on top of it in the flame graph.
-
-The profiling data has some limitations: some internal R functions don't show up in the flame graph, and it offers no insight into code that's implemented in languages other than R (e.g. C, C++, or Fortran).
-:::
-
-## Load testing {auto-animate="true"}
-
-<font size="6">
-
-Using [load testing](https://docs.rstudio.com/connect/user/shiny/#load-testing) with profiling grants a very granular view of where the performance issues are happening. Oftenlower usage apps may appear to have great performance, only to struggle as more users access that piece of content due to multiple users sharing the same R or Python process.
-
-::: {layout="[2, 20]"}
-![](https://rstudio.github.io/shinyloadtest/reference/figures/slt_report_screenshot.png){width="70"}
-
-**shinyloadtest** - Load testing helps developers and administrators estimate how many users their application can support.
-:::
-
-::: footer
-Learn more: [shinyloadtest](https://rstudio.github.io/shinyloadtest/articles/load-testing-authenticated-apps.html)
-:::
-
-</font>
-
-::: notes
-The steps:
-
--   Record a typical user session for the app.
--   Replay the session in parallel, simulating many simultaneous users accessing the app.
--   Analyze the results of the load test and determine if the app performed well enough.
-:::
-
-## Load testing {auto-animate="true"}
-
-<font size="5">
-
-::: {layout="[2, 20]"}
-![](https://rstudio.github.io/shinyloadtest/reference/figures/slt_report_screenshot.png){width="70"}
-
-**shinyloadtest** - Load testing helps developers and administrators estimate how many users their application can support.
-:::
-
-The steps:
-
--   Record a typical user session for the app.
-
-``` r
-shinyloadtest::record_session('https://shinyapp.example.com/')
-```
-
--   Replay the session in parallel, simulating many simultaneous users accessing the app.
-
-``` r
-shinycannon recording.log https://shinyapp.example.com/ --workers 5 --loaded-duration-minutes 2 --output-dir run1
-```
-
--   Analyze the results of the load test and determine if the app performed well enough.
-
-``` r
-df <- shinyloadtest::load_runs("run1")
-shinyloadtest::shinyloadtest_report(df, "run1.html")
-```
-
-::: footer
-Learn more: [shinyloadtest](https://rstudio.github.io/shinyloadtest/articles/load-testing-authenticated-apps.html)
-:::
-
-</font>
-
-## Load testing {auto-animate="true"}
-
-<font size="6">
-
-::: {layout="[2, 20]"}
-![](https://rstudio.github.io/shinyloadtest/reference/figures/slt_report_screenshot.png){width="70"}
-
-**shinyloadtest** - Load testing helps developers and administrators estimate how many users their application can support.
-:::
-
-<center>
-
-![](https://rstudio.github.io/shinyloadtest/reference/figures/slt_report_screenshot.png){width="70%"}
-
-::: {.citation style="font-size: 16px"}
-For more information refer to [shinyloadtest](https://rstudio.github.io/shinyloadtest/articles/load-testing-authenticated-apps.html)
-:::
-
-</center>
-
-</font>
-
-## What about Python?
-
--   Python profiling tool: <https://jiffyclub.github.io/snakeviz/>
--   Python load testing tool: <https://locust.io/>
-
-## Where to go from here?
-
--   [Shiny in Production by Kelly O'Briant](https://kellobri.github.io/shiny-prod-book/scaling.html)
--   [Cran whales](https://rstudio.github.io/promises/articles/casestudy.html)
--   [Cran whales talk](https://www.youtube.com/watch?v=Wy3TY0gOmJw)
--   [Cran whales article](https://cran.r-project.org/web/packages/promises/vignettes/casestudy.html)
--   [Profiling in RStudio](https://support.posit.co/hc/en-us/articles/218221837-Profiling-with-RStudio)
-
-# Optional/Backup {.smaller}
-
-# Data best practices {.smaller}
-
-Apply data best practices and see if that improves performance:
-
--   Pull data on a scheduler
--   Reducing the data being loaded
--   Selecting a faster data storage system, for example by [pinning arrow files](https://pins.rstudio.com/articles/pins.html?q=arrow#reading-and-writing-data)
--   Utilize [cacheing](https://docs.rstudio.com/connect/user/shiny/#caching)
-
-# Async {.smaller}
-
-As a last resort we can consider async.
-
-In general, async is only useful when there are specific steps that take a long time to run, since that will free up the process to service other users. Usually async is saved as a last resort because it is usually the most challenging to implement.
-
--   [Improving scalability with async programming in R](https://shiny.rstudio.com/articles/async.html)
--   [Improving scalability with async programming in Python](https://shiny.rstudio.com/articles/async.html)
-
-When using async, encouraging developers to include additional debug messages, for example with [log4r in R](https://github.com/johnmyleswhite/log4r), is particularly important. This will allow developers to trace back errors to the session and connection.
-
-## When to know it's a real server issue {.smaller}
-
-Ask the questions:
-
--   Are all applications impacted?
--   Has performance gotten worse over time?
-
-Use the tools:
-
--   Admin dashboard
--   Logs
--   Scheduled content timetable
--   Any additional monitoring through Prometheus/Graphite/etc.
--   Reclaim space by [reducing the number of bundles stored on the server](https://docs.rstudio.com/connect/admin/content-management/#bundle-management)
-
-::: notes
-:::
