@@ -28,70 +28,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="reports_files/libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="reports_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -402,14 +338,14 @@ Posit Solutions Engineering (Lisa Anders)
 </div>
 
 </section>
-<section id="reports" class="slide level2 smaller">
-<h2>Reports</h2>
+<section id="outline" class="slide level2 smaller">
+<h2>Outline</h2>
+<center>
 <ul>
 <li>RMarkdowns</li>
 <li>Quarto</li>
-<li>Complex workflows with Plumber and Pins</li>
+<li>Complex workflows with Pins</li>
 </ul>
-<center>
 <p><img data-src="https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png" style="width:50.0%"></p>
 <div class="citation" style="font-size: 16px">
 <p>“Illustration from Hadley Wickham’s talk”The Joy of Functional Programming (for Data Science).” by <a href="https://github.com/allisonhorst/stats-illustrations">Allison Horst</a></p>
@@ -444,11 +380,11 @@ Posit Solutions Engineering (Lisa Anders)
 <p><img data-src="https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true" width="70"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
-<p><strong>RMarkdown</strong> - RMarkdown reports are fully reproducible notebooks that weave together narrative text and code to product formatted outputs.</p>
+<p><strong>RMarkdown</strong> - Fully reproducible notebooks that weave together narrative text and code to product formatted outputs.</p>
 </div>
 </div>
 </div>
-<p>RMarkdown documents:</p>
+<p>RMarkdown documents are:</p>
 <ul>
 <li>Easily accessible and testable to ensure accurate results every time</li>
 <li>Easily version controlled</li>
@@ -468,10 +404,10 @@ Posit Solutions Engineering (Lisa Anders)
           display:block!important;
       }</style></aside>
 </section>
-<section id="rmarkdowns-1" class="slide level2">
+<section id="rmarkdowns-1" class="slide level2 smaller">
 <h2>RMarkdowns</h2>
 <center>
-<p><img data-src="images/rmarkdown.png" style="width:50.0%"></p>
+<img data-src="images/rmarkdown.png" style="width:50.0%">
 </center>
 <p><font size="6"></font></p><font size="6">
 <p>General example:</p>
@@ -481,20 +417,32 @@ Posit Solutions Engineering (Lisa Anders)
 </ul>
 </font><p><font size="6"></font></p>
 </section>
-<section id="rmarkdowns-2" class="slide level2">
-<h2>RMarkdowns</h2>
+<section id="rmarkdowns-parameterization" class="slide level2 smaller">
+<h2>RMarkdowns: Parameterization</h2>
 <center>
-<p><img data-src="images/rmarkdown_param.png" style="width:50.0%"></p>
+<img data-src="images/rmarkdown_param.png" style="width:50.0%">
 </center>
 <p><font size="6"></font></p><font size="6">
-<p>Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need.</p>
-<p>When deploying the app it will need to have the source code included so that users can change the input parameter and re-render.</p>
 <p>Parameterized Rmarkdown example:</p>
 <ul>
 <li><a href="https://github.com/leesahanders/code_sandbox/blob/main/R/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd">Code URL</a></li>
 <li><a href="https://colorado.posit.co/rsc/connect/#/apps/265af2df-d761-4ec4-9e38-3d789b2e4298/access/5652">Developer URL</a></li>
 </ul>
+<p>When deploying the app it will need to have the source code included so that users can change the input parameter and re-render.</p>
 </font><p><font size="6"></font></p>
+<aside class="notes">
+<p>Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="favorite-rmarkdown-packages" class="slide level2 smaller">
 <h2>Favorite RMarkdown packages</h2>
@@ -504,14 +452,7 @@ Posit Solutions Engineering (Lisa Anders)
 <p><img data-src="https://pkgs.rstudio.com/blastula/reference/figures/logo.svg" width="70"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
-<p><strong>Blastula</strong></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
-<ul>
-<li>Make it easy to send great looking HTML emails.</li>
-</ul>
+<p><strong>Blastula</strong> - Make it easy to send great looking HTML emails.</p>
 </div>
 </div>
 </div>
@@ -521,14 +462,7 @@ Posit Solutions Engineering (Lisa Anders)
 <p><img data-src="https://rstudio.github.io/connectwidgets/reference/figures/logo.png" width="70"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
-<p><strong>Connectwidgets</strong></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
-<ul>
-<li>Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application.</li>
-</ul>
+<p><strong>Connectwidgets</strong> - Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application.</p>
 </div>
 </div>
 </div>
@@ -538,14 +472,7 @@ Posit Solutions Engineering (Lisa Anders)
 <p><img data-src="https://pkgs.rstudio.com/flexdashboard/reference/figures/logo.png" width="70"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
-<p><strong>Flexdashboard</strong></p>
-</div>
-</div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
-<ul>
-<li>Lay out interactive dashboards using groups related visualizations in RMarkdowns.</li>
-</ul>
+<p><strong>Flexdashboard</strong> - Flexible and easy to specify row and column-based layouts. Components are intelligently re-sized to fill the browser and adapted for display on mobile devices.</p>
 </div>
 </div>
 </div>
@@ -563,7 +490,7 @@ Posit Solutions Engineering (Lisa Anders)
           display:block!important;
       }</style></aside>
 </section>
-<section id="rmarkdown-examples" class="slide level2">
+<section id="rmarkdown-examples" class="slide level2 smaller">
 <h2>RMarkdown Examples</h2>
 <p>Connectwidgets example:</p>
 <ul>
@@ -576,8 +503,8 @@ Posit Solutions Engineering (Lisa Anders)
 <li><a href="https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958">Developer URL</a></li>
 </ul>
 </section>
-<section id="the-latest-and-greatest-quarto" class="slide level2 smaller">
-<h2>The latest and greatest: Quarto</h2>
+<section id="quarto" class="slide level2">
+<h2>Quarto</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
@@ -588,6 +515,37 @@ Posit Solutions Engineering (Lisa Anders)
 </div>
 </div>
 </div>
+<p>Quarto and RMarkdown work similarly, however Quarto was developed to be language agnostic and applied all the learnings from the development of RMarkdown.</p>
+<center>
+<img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" style="width:100.0%">
+</center>
+<div class="footer">
+<p>Image from : <a href="https://quarto.org/docs/faq/rmarkdown.html">Quarto FAQ</a></p>
+</div>
+<aside class="notes">
+<p>Same as with RMarkdowns, Quarto is:</p>
+<ul>
+<li>Easily accessible and testable to ensure accurate results every time</li>
+<li>Easily version controlled</li>
+<li>Easy to use with ample documentation and examples</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="quarto-1" class="slide level2 smaller">
+<h2>Quarto</h2>
+<center>
+<img data-src="images/quarto-python.png" style="width:50.0%">
+</center>
 <p>Quarto with Python example:</p>
 <ul>
 <li><a href="https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox">Code URL</a></li>
@@ -607,28 +565,81 @@ Posit Solutions Engineering (Lisa Anders)
           display:block!important;
       }</style></aside>
 </section>
-<section id="where-to-go-from-here" class="slide level2">
+<section id="complex-workflows" class="slide level2 smaller">
+<h2>Complex workflows</h2>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
+<p><img data-src="https://www.tidymodels.org/images/tidymodels.png" width="70"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
+<p><strong>tidymodels</strong> - The tidymodels framework is a collection of packages for modeling and machine learning using tidyverse principles.</p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
+<p><img data-src="https://rstudio.github.io/vetiver-r/logo.png" width="70"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
+<p><strong>vetiver</strong> - Vetiver provides fluent tooling to version, deploy, and monitor a trained model.</p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
+<p><img data-src="https://pins.rstudio.com/logo.png" width="70"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
+<p><strong>pins</strong> - The pins package publishes data, models, and other R objects, making it easy to share them across projects and with your colleagues.</p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 9.1%;justify-content: center;">
+<p><img data-src="https://d33wubrfki0l68.cloudfront.net/9f64516ebe93a8e5c91ea7409cbf422f8fec00e9/d75bd/logo.svg" width="70"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 90.9%;justify-content: center;">
+<p><strong>plumber APIs</strong> - Plumber allows you to create a web API by merely decorating your existing R source code with roxygen2-like comments.</p>
+</div>
+</div>
+</div>
+<center>
+<div class="citation" style="font-size: 16px">
+<p>tidymodels <a href="https://www.tidymodels.org/" class="uri">https://www.tidymodels.org/</a>, vetiver <a href="https://vetiver.rstudio.com/" class="uri">https://vetiver.rstudio.com/</a>, pins <a href="https://pins.rstudio.com/" class="uri">https://pins.rstudio.com/</a>, plumber <a href="https://www.rplumber.io/" class="uri">https://www.rplumber.io/</a></p>
+</div>
+</center>
+<aside class="notes">
+<p>Development:</p>
+<ul>
+<li>Writing effective code</li>
+<li>Connecting to data sources and systems</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="complex-workflows-1" class="slide level2 smaller">
+<h2>Complex workflows</h2>
+
+<img data-src="https://github.com/sol-eng/bike_predict/raw/main/img/arrows.drawio.png" style="width:70.0%" class="r-stretch"></section>
+<section id="where-to-go-from-here" class="slide level2 smaller">
 <h2>Where to go from here?</h2>
 <ul>
 <li>Explore all the content options deployable to Connect as well as examples: <a href="https://docs.posit.co/connect/user/">Connect User Guide</a></li>
 </ul>
 <p>Happy Reporting!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(profvis)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># general code example</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">profvis</span>({</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  <span class="fu">data</span>(diamonds, <span class="at">package =</span> <span class="st">"ggplot2"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  </span>
-<span id="cb1-7"><a href="#cb1-7"></a>  <span class="fu">plot</span>(price <span class="sc">~</span> carat, <span class="at">data =</span> diamonds)</span>
-<span id="cb1-8"><a href="#cb1-8"></a>  m <span class="ot">&lt;-</span> <span class="fu">lm</span>(price <span class="sc">~</span> carat, <span class="at">data =</span> diamonds)</span>
-<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">abline</span>(m, <span class="at">col =</span> <span class="st">"red"</span>)</span>
-<span id="cb1-10"><a href="#cb1-10"></a>})</span>
-<span id="cb1-11"><a href="#cb1-11"></a></span>
-<span id="cb1-12"><a href="#cb1-12"></a><span class="co"># shiny app example</span></span>
-<span id="cb1-13"><a href="#cb1-13"></a><span class="fu">profvis</span>({<span class="fu">runApp</span>()})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Learn more: <a href="https://rstudio.github.io/profvis/index.html">profvis</a></p>
-</div>
 
 <img src="images/posit-logo-black-TM.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="http://solutions.rstudio.com/" class="uri">http://solutions.rstudio.com/</a></p>

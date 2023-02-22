@@ -17,9 +17,9 @@ editor: source
 
 <center>
 
- - RMarkdowns 
- - Quarto 
- - Complex workflows with Plumber and Pins
+-   RMarkdowns
+-   Quarto
+-   Complex workflows with Pins
 
 ![](https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png){width="50%"}
 
@@ -30,72 +30,62 @@ editor: source
 </center>
 
 ::: notes
-- RMarkdowns 
-- Parameterization
-- Pretty emails with Blastula 
-- Custom landing pages with connectwidgets 
-- Dashboards with flexdashboard
-- The latest and greatest: Quarto 
+-   RMarkdowns
+-   Parameterization
+-   Pretty emails with Blastula
+-   Custom landing pages with connectwidgets
+-   Dashboards with flexdashboard
+-   The latest and greatest: Quarto
 :::
-
 
 ## RMarkdowns {.smaller}
 
 ::: {layout="[2, 20]"}
 ![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
 
-**RMarkdown**
-  -   Fully reproducible notebooks that weave together narrative text and code to product formatted outputs. 
+**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to product formatted outputs.
 :::
 
-They are:
+RMarkdown documents are:
 
- - Easily accessible and testable to ensure accurate results every time
- - Easily version controlled
- - Easy to use with ample documentation and examples 
+-   Easily accessible and testable to ensure accurate results every time
+-   Easily version controlled
+-   Easy to use with ample documentation and examples
 
 ::: notes
-
 :::
 
-## RMarkdowns
+## RMarkdowns {.smaller}
 
-<center>
-
-![](images/rmarkdown.png){width="50%"}
-
-</center>
+<center>![](images/rmarkdown.png){width="50%"}</center>
 
 <font size="6">
 
-General example: 
+General example:
 
-- [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-penguins)
-- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/fe7d605a-bb96-4e8a-9ef4-b633140a05d7/access/5957)
+-   [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-penguins)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/fe7d605a-bb96-4e8a-9ef4-b633140a05d7/access/5957)
 
 </font>
 
+## RMarkdowns: Parameterization {.smaller}
 
-## RMarkdowns
-
-<center>
-
-![](images/rmarkdown_param.png){width="50%"}
-
-</center>
+<center>![](images/rmarkdown_param.png){width="50%"}</center>
 
 <font size="6">
 
-Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need. 
+Parameterized Rmarkdown example:
 
-When deploying the app it will need to have the source code included so that users can change the input parameter and re-render. 
+-   [Code URL](https://github.com/leesahanders/code_sandbox/blob/main/R/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/265af2df-d761-4ec4-9e38-3d789b2e4298/access/5652)
 
-Parameterized Rmarkdown example: 
-
-- [Code URL](https://github.com/leesahanders/code_sandbox/blob/main/R/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd)
-- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/265af2df-d761-4ec4-9e38-3d789b2e4298/access/5652)
+When deploying the app it will need to have the source code included so that users can change the input parameter and re-render.
 
 </font>
+
+::: notes
+Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need.
+:::
 
 ## Favorite RMarkdown packages {.smaller}
 
@@ -103,113 +93,141 @@ Parameterized Rmarkdown example:
 ![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
 
 **Blastula**
-
-  -   Make it easy to send great looking HTML emails. 
+-   Make it easy to send great looking HTML emails.
 :::
 
 ::: {layout="[2, 20]"}
 ![](https://rstudio.github.io/connectwidgets/reference/figures/logo.png){width="70"}
 
 **Connectwidgets**
-
-  -    Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application. 
+-   Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application.
 :::
 
 ::: {layout="[2, 20]"}
 ![](https://pkgs.rstudio.com/flexdashboard/reference/figures/logo.png){width="70"}
 
 **Flexdashboard**
-
-  -   Lay out interactive dashboards using groups related visualizations in RMarkdowns. 
+-   Flexible and easy to specify row and column-based layouts. Components are intelligently re-sized to fill the browser and adapted for display on mobile devices.
 :::
 
 ::: notes
-
 :::
 
-## RMarkdown Examples 
+## RMarkdown Examples {.smaller}
 
-Connectwidgets example: 
+Connectwidgets example:
 
-- [Code URL](https://github.com/leesahanders/posit-demo-content)
-- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/b101e24a-3d96-4a09-9a55-9e649cfd0f24/access/5965)
+-   [Code URL](https://github.com/leesahanders/posit-demo-content)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/b101e24a-3d96-4a09-9a55-9e649cfd0f24/access/5965)
 
-Blastula example: 
+Blastula example:
 
-- [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-blastula)
-- [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
+-   [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-blastula)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
 
-
-## Quarto 
+## Quarto
 
 ::: {layout="[2, 20]"}
 ![](https://quarto.org/quarto.png){width="60"}
 
-**quarto**
-  -   A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages. 
+**quarto** - A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages.
 :::
 
-Quarto and RMarkdown work similarly, however Quarto was developed to be language agnostic and applied all the learnings from the development of RMarkdown. 
+Quarto and RMarkdown work similarly, however Quarto was developed to be language agnostic and applied all the learnings from the development of RMarkdown.
 
-![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png){width="50%"}
+<center>
 
+![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png){width="100%"}
+</center>
 
 ::: footer
 Image from : [Quarto FAQ](https://quarto.org/docs/faq/rmarkdown.html)
 :::
 
+::: notes
+Same as with RMarkdowns, Quarto is:
 
+-   Easily accessible and testable to ensure accurate results every time
+-   Easily version controlled
+-   Easy to use with ample documentation and examples
+:::
 
-## Quarto 
+## Quarto {.smaller}
 
-<center>
+<center>![](images/quarto-python.png){width="50%"}</center>
 
-![](images/quarto-python.png){width="50%"}
+Quarto with Python example:
 
-</center>
-
-Quarto with Python example: 
-
- - [Code URL](https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox)
- - [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/84a42164-6a63-4fe3-af31-474ac56a9bac/access/5930)
-
+-   [Code URL](https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/84a42164-6a63-4fe3-af31-474ac56a9bac/access/5930)
 
 ::: notes
+:::
 
+## Complex workflows {.smaller}
+
+
+::: {layout="[2, 20]"}
+![](https://www.tidymodels.org/images/tidymodels.png){width="70"}
+
+**tidymodels**
+  -   The tidymodels framework is a collection of packages for modeling and machine learning using tidyverse principles.
+:::
+
+::: {layout="[2, 20]"}
+![](https://rstudio.github.io/vetiver-r/logo.png){width="70"}
+
+**vetiver**
+  -   Vetiver provides fluent tooling to version, deploy, and monitor a trained model. 
+:::
+
+::: {layout="[2, 20]"}
+![](https://pins.rstudio.com/logo.png){width="70"}
+
+**pins**
+  -   The pins package publishes data, models, and other R objects, making it easy to share them across projects and with your colleagues. 
+:::
+
+::: {layout="[2, 20]"}
+![](https://d33wubrfki0l68.cloudfront.net/9f64516ebe93a8e5c91ea7409cbf422f8fec00e9/d75bd/logo.svg){width="70"}
+
+**plumber APIs**
+  -   Plumber allows you to create a web API by merely decorating your existing R source code with roxygen2-like comments.
+:::
+
+<center>
+::: {.citation style="font-size: 16px"}
+tidymodels <https://www.tidymodels.org/>, vetiver <https://vetiver.rstudio.com/>, pins <https://pins.rstudio.com/>, plumber <https://www.rplumber.io/>
+:::
+</center>
+
+::: {.notes}
 :::
 
 
+## Complex workflows {.smaller}
 
-
-
-## Where to go from here? 
-
- - Explore all the content options deployable to Connect as well as examples: [Connect User Guide](https://docs.posit.co/connect/user/)
- 
-Happy Reporting! 
-
-
-
-
-
-
-``` r
-library(profvis)
-
-# general code example
-profvis({
-  data(diamonds, package = "ggplot2")
-  
-  plot(price ~ carat, data = diamonds)
-  m <- lm(price ~ carat, data = diamonds)
-  abline(m, col = "red")
-})
-
-# shiny app example
-profvis({runApp()})
-```
+![](https://github.com/sol-eng/bike_predict/raw/main/img/arrows.drawio.png){width="70%"}
 
 ::: footer
-Learn more: [profvis](https://rstudio.github.io/profvis/index.html)
+Learn more : [Bike Predict Solutions Example](https://solutions.posit.co/gallery/bike_predict/index.html)
 :::
+
+## Complex workflows {.smaller}
+
+Pin example:
+
+- [Code URL](https://github.com/leesahanders/code_sandbox/tree/main/R/pin)
+- [Developer URL for pinned dataset](https://colorado.posit.co/rsc/connect/#/apps/1d002e9f-1922-4fa7-bfbd-b3262dcde0ad/access)
+- [Developer URL for document refreshing the pin](https://colorado.posit.co/rsc/connect/#/apps/3dae5785-607d-451f-8551-820d5a07ae1d/access/5939)
+- [Developer URL for app](https://colorado.posit.co/rsc/connect/#/apps/a0aa6140-686c-4bc1-bb51-5596e5e99436/access)
+
+
+
+
+## Where to go from here? {.smaller}
+
+-   Explore all the content options deployable to Connect as well as examples: [Connect User Guide](https://docs.posit.co/connect/user/)
+
+Happy Reporting!
 
