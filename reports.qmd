@@ -1,5 +1,5 @@
 ---
-title: "Reporting with Posit Team"
+title: "Reporting in R with Posit Team"
 author: "Posit Solutions Engineering (Lisa Anders)"
 institute: "Posit, PBC"
 format:
@@ -15,7 +15,8 @@ editor: source
 
 ## Outline {.smaller}
 
-<center>
+
+::: {layout="[1,1.5], [1]"}
 
 -   RMarkdowns
 -   Quarto
@@ -23,6 +24,9 @@ editor: source
 
 ![](https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png){width="50%"}
 
+:::
+
+<center>
 ::: {.citation style="font-size: 16px"}
 "Illustration from Hadley Wickham's talk"The Joy of Functional Programming (for Data Science)." by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 :::
@@ -214,6 +218,13 @@ Learn more : [Bike Predict Solutions Example](https://solutions.posit.co/gallery
 :::
 
 ## Complex workflows {.smaller}
+
+::: {layout="[2, 20]"}
+![](https://pins.rstudio.com/logo.png){width="70"}
+
+**pins**
+  -   The pins package publishes data, models, and other R objects, making it easy to share them across projects and with your colleagues. 
+:::
 
 Pin example:
 
