@@ -1,0 +1,4 @@
+- source: reports.qmd
+  quarto-pub:
+    - id: 1094ee5c-5b65-4e3b-8815-87d1611c1579
+      url: 'https://quartopub.com/sites/questionable/reporting-in-r-with-posit-team'
