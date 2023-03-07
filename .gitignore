@@ -2,4 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
-
+.venv/
+.renv/
+/.quarto/
+/.venv/
+/rsconnect-python/
+/.luarc.json
