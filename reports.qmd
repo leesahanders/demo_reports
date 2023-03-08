@@ -132,13 +132,44 @@ Parameterizing your rmarkdown lets you do a lot of cool things, like automating 
 
 ## RMarkdowns: Sending emails with Blastula {.smaller}
 
-::: {layout="[1,1], [1]"} 
+<!-- ::: {layout="[1,1,1,1], [1]"}  -->
+<center>
 
-![](images/rmarkdown_default.png){width="20%"}
+Before: 
 
-![](images/rmarkdown_blastula_short.png){width="20%"}
+![](images/rmarkdown_default.png){width="30%"}
+
+<!-- <left>![](images/rmarkdown_default.png){width="50%"}</left> -->
+<!-- <right>![](images/rmarkdown_blastula.png){width="50%"}</right> -->
+
+</center>
+
+<font size="6">
+
+Blastula example:
+
+-   [Code URL](https://github.com/leesahanders/demo_reports/tree/main/examples/rmarkdown_blastula)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
+
+<!-- Some types of HTML formatting may be restricted depending on your email provider.  -->
+
+</font>
+
+::: notes
 
 :::
+
+## RMarkdowns: Sending emails with Blastula {.smaller}
+
+<!-- ::: {layout="[1,1,1,1], [1]"}  -->
+
+<center>
+
+After: 
+
+![](images/rmarkdown_blastula_short.png){width="40%"}
+</center>
+
 
 <!-- <left>![](images/rmarkdown_default.png){width="50%"}</left> -->
 <!-- <right>![](images/rmarkdown_blastula.png){width="50%"}</right> -->
@@ -150,7 +181,7 @@ Blastula example:
 -   [Code URL](https://github.com/leesahanders/demo_reports/tree/main/examples/rmarkdown_blastula)
 -   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
 
-Some types of HTML formatting may be restricted depending on your email provider. 
+<!-- Some types of HTML formatting may be restricted depending on your email provider.  -->
 
 </font>
 
@@ -310,6 +341,11 @@ Pin example:
 ## Where to go from here? {.smaller}
 
 -   Explore all the content options deployable to Connect as well as examples: [Connect User Guide](https://docs.posit.co/connect/user/)
+
+-   Awesome List for [RMarkdown tips and tricks](https://awesomeopensource.com/project/harryprince/awesome-rmarkdown) 
+
+-   Awesome List for [Quarto tips and tricks](https://awesomeopensource.com/project/mcanouil/awesome-quarto) 
+
 
 Happy Reporting!
 
