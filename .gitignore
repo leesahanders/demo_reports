@@ -8,3 +8,4 @@
 /.venv/
 /rsconnect-python/
 /.luarc.json
+.html

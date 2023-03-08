@@ -50,7 +50,7 @@ editor: source
 ::: {layout="[2, 20]"}
 ![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
 
-**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to product formatted outputs.
+**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to produce formatted outputs.
 :::
 
 ::: {layout="[2, 20]"}
@@ -86,7 +86,7 @@ editor: source
 ::: {layout="[2, 20]"}
 ![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
 
-**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to product formatted outputs.
+**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to produce formatted outputs.
 :::
 
 RMarkdown documents are:
@@ -212,6 +212,8 @@ Blastula example:
 -   Flexible and easy to specify row and column-based layouts. Components are intelligently re-sized to fill the browser and adapted for display on mobile devices.
 :::
 
+-   Awesome List for [RMarkdown tips and tricks](https://awesomeopensource.com/project/harryprince/awesome-rmarkdown)
+
 ::: notes
 :::
 
@@ -244,18 +246,6 @@ Same as with RMarkdowns, Quarto is:
 
 ## Quarto {.smaller}
 
-<center>![](images/quarto-python.png){width="50%"}</center>
-
-Quarto with Python example:
-
--   [Code URL](https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox)
--   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/84a42164-6a63-4fe3-af31-474ac56a9bac/access/5930)
-
-::: notes
-:::
-
-## Quarto {.smaller}
-
 Code blocks can also be included in Quarto presentations: 
 
 ```{r}
@@ -269,6 +259,22 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + 
   geom_smooth(method = "loess")
 ```
+
+-   Awesome List for [Quarto tips and tricks](https://awesomeopensource.com/project/mcanouil/awesome-quarto) 
+
+## Quarto {.smaller}
+
+<center>![](images/quarto-python.png){width="50%"}</center>
+
+Quarto with Python and lightbox example:
+
+-   [Code URL](https://github.com/sol-eng/python-examples/tree/main/quarto-lightbox)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/84a42164-6a63-4fe3-af31-474ac56a9bac/access/5930)
+
+::: notes
+:::
+
+
 
 ## Complex workflows {.smaller}
 
