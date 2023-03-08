@@ -1,8 +1,23 @@
-# demo_reports
+# A demo of some of my favorite reports using Posit Pro Products
 
 This is a quarto presentation on different R report types and integration with Posit team. Enjoy!
 
 It can be accessed at: <https://quartopub.com/sites/questionable/reporting-in-r-with-posit-team>
+
+Some of the example reports included in this repo are: 
+
+R: 
+
+- Quarto presentation 
+- RMarkdown (with blastula for email formatting)
+- RMarkdown parameterized 
+- RMarkdown being used to update a pinned dataset
+
+Python: 
+
+- Jupyter notebook
+- Quarto document (with the lightbox extension)
+
 
 ## Publishing 
 

@@ -1,5 +1,5 @@
 ---
-title: "Reporting in R with Posit Team"
+title: "Reporting with Posit Team"
 author: "Posit Solutions Engineering (Lisa Anders)"
 institute: "Posit, PBC"
 format:
@@ -13,20 +13,22 @@ format:
 editor: source
 ---
 
-## Outline {.smaller}
+## Reporting with Posit Team {.smaller}
 
 
-::: {layout="[1,1.5], [1]"}
+<!-- ::: {layout="[1,1.5], [1]"} -->
 
--   RMarkdowns
--   Quarto
--   Complex workflows with Pins
-
-![](https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png){width="50%"}
-
-:::
+<!-- -   RMarkdowns -->
+<!-- -   Quarto -->
+<!-- -   Complex workflows with Pins -->
 
 <center>
+
+![](https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/data_cowboy.png){width="80%"}
+
+<!-- ::: -->
+
+
 ::: {.citation style="font-size: 16px"}
 "Illustration from Hadley Wickham's talk"The Joy of Functional Programming (for Data Science)." by [Allison Horst](https://github.com/allisonhorst/stats-illustrations)
 :::
@@ -41,6 +43,43 @@ editor: source
 -   Dashboards with flexdashboard
 -   The latest and greatest: Quarto
 :::
+
+
+## Outline {.smaller}
+
+::: {layout="[2, 20]"}
+![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
+
+**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to product formatted outputs.
+:::
+
+::: {layout="[2, 20]"}
+![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
+
+**Blastula**
+-   Make it easy to send great looking HTML emails.
+:::
+
+
+::: {layout="[2, 20]"}
+![](https://quarto.org/quarto.png){width="60"}
+
+**quarto** - A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages.
+:::
+
+::: {layout="[2, 20]"}
+![](https://jupyter.org/assets/homepage/main-logo.svg){width="70"}
+
+**Jupyter**
+-   Web application for sharing computational documents. 
+:::
+
+
+
+::: notes
+
+:::
+
 
 ## RMarkdowns {.smaller}
 
@@ -80,7 +119,7 @@ General example:
 
 Parameterized Rmarkdown example:
 
--   [Code URL](https://github.com/leesahanders/code_sandbox/blob/main/R/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd)
+-   [Code URL](https://github.com/leesahanders/demo_reports/blob/main/examples/rmarkdown_parameterized/Visualizing%20the%20Ocean%20Floor.Rmd)
 -   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/265af2df-d761-4ec4-9e38-3d789b2e4298/access/5652)
 
 When deploying the app it will need to have the source code included so that users can change the input parameter and re-render.
@@ -89,6 +128,34 @@ When deploying the app it will need to have the source code included so that use
 
 ::: notes
 Parameterizing your rmarkdown lets you do a lot of cool things, like automating the generation of hundreds of similar reports using different parameters, or allowing users to enter their own parameters and generate a report specific to what they need.
+:::
+
+## RMarkdowns: Sending emails with Blastula {.smaller}
+
+::: {layout="[1,1], [1]"} 
+
+![](images/rmarkdown_default.png){width="20%"}
+
+![](images/rmarkdown_blastula_short.png){width="20%"}
+
+:::
+
+<!-- <left>![](images/rmarkdown_default.png){width="50%"}</left> -->
+<!-- <right>![](images/rmarkdown_blastula.png){width="50%"}</right> -->
+
+<font size="6">
+
+Blastula example:
+
+-   [Code URL](https://github.com/leesahanders/demo_reports/tree/main/examples/rmarkdown_blastula)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
+
+Some types of HTML formatting may be restricted depending on your email provider. 
+
+</font>
+
+::: notes
+
 :::
 
 ## Favorite RMarkdown packages {.smaller}
@@ -116,18 +183,6 @@ Parameterizing your rmarkdown lets you do a lot of cool things, like automating 
 
 ::: notes
 :::
-
-## RMarkdown Examples {.smaller}
-
-Connectwidgets example:
-
--   [Code URL](https://github.com/leesahanders/posit-demo-content)
--   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/b101e24a-3d96-4a09-9a55-9e649cfd0f24/access/5965)
-
-Blastula example:
-
--   [Code URL](https://github.com/sol-eng/r-examples/tree/main/rmd-blastula)
--   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4f5d77c3-88b6-4c86-9cd9-ab86c5fb8e50/access/5958)
 
 ## Quarto
 
