@@ -18,6 +18,7 @@ Python:
 - Jupyter notebook
 - Quarto document (with the lightbox extension)
 
+This is part of this webinar reporting project: <https://github.com/22kcox/posit-webinar-series> 
 
 ## Publishing 
 

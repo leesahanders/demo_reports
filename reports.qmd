@@ -45,7 +45,39 @@ editor: source
 :::
 
 
-## Outline {.smaller}
+## What makes a good report? {.incremental}
+
+Ideas? 
+
+
+
+::: notes
+
+:::
+
+
+## What makes a good report? {.incremental}
+
+Ideas? 
+
+ - Reproduceable 
+ 
+ - Easy to share
+
+ - Pretty
+ 
+ 
+Building reports programmatically is powerful!
+
+::: notes
+
+This is where building reports programmatically is so powerful, so you can take advantage of version control through systems like Git, and sharing options through Posit Connect can be so powerful. And it's just the tip of the iceberg for all the beautiful packages and modules that can be used! 
+
+:::
+
+
+
+## Different report options {.smaller}
 
 ::: {layout="[2, 20]"}
 ![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
@@ -54,32 +86,22 @@ editor: source
 :::
 
 ::: {layout="[2, 20]"}
-![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
-
-**Blastula**
--   Make it easy to send great looking HTML emails.
-:::
-
-
-::: {layout="[2, 20]"}
 ![](https://quarto.org/quarto.png){width="60"}
 
-**quarto** - A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages.
+**Quarto** - A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages.
 :::
 
 ::: {layout="[2, 20]"}
 ![](https://jupyter.org/assets/homepage/main-logo.svg){width="70"}
 
 **Jupyter**
--   Web application for sharing computational documents. 
+-   Web application for sharing computational documents. (Not covered in today's talk)
 :::
-
 
 
 ::: notes
 
 :::
-
 
 ## RMarkdowns {.smaller}
 
@@ -95,7 +117,9 @@ RMarkdown documents are:
 -   Easily version controlled
 -   Easy to use with ample documentation and examples
 
+
 ::: notes
+Put in the chat how long you've been working with RMarkdown documents 
 :::
 
 ## RMarkdowns {.smaller}
@@ -110,6 +134,32 @@ General example:
 -   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/fe7d605a-bb96-4e8a-9ef4-b633140a05d7/access/5957)
 
 </font>
+
+## RMarkdowns: Favorite packages {.smaller}
+
+::: {layout="[2, 20]"}
+![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
+
+**Blastula**
+-   Make it easy to send great looking HTML emails.
+:::
+
+::: {layout="[2, 20]"}
+![](https://pkgs.rstudio.com/flexdashboard/reference/figures/logo.png){width="70"}
+
+**Flexdashboard**
+-   Flexible and easy to specify row and column-based layouts. Components are intelligently re-sized to fill the browser and adapted for display on mobile devices.
+:::
+
+::: {layout="[2, 20]"}
+![](https://rstudio.github.io/connectwidgets/reference/figures/logo.png){width="70"}
+
+**Connectwidgets**
+-   Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application. (Not covered in today's talk)
+:::
+
+::: notes
+:::
 
 ## RMarkdowns: Parameterization {.smaller}
 
@@ -189,21 +239,10 @@ Blastula example:
 
 :::
 
-## Favorite RMarkdown packages {.smaller}
 
-::: {layout="[2, 20]"}
-![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
+## RMarkdowns: Interactive dashboards with Flexdashboard 
 
-**Blastula**
--   Make it easy to send great looking HTML emails.
-:::
-
-::: {layout="[2, 20]"}
-![](https://rstudio.github.io/connectwidgets/reference/figures/logo.png){width="70"}
-
-**Connectwidgets**
--   Query a Connect server for a subset of your existing content items, then organize them within htmlwidget components in an R Markdown document or Shiny application.
-:::
+<!-- ::: {layout="[1,1,1,1], [1]"}  -->
 
 ::: {layout="[2, 20]"}
 ![](https://pkgs.rstudio.com/flexdashboard/reference/figures/logo.png){width="70"}
@@ -212,10 +251,28 @@ Blastula example:
 -   Flexible and easy to specify row and column-based layouts. Components are intelligently re-sized to fill the browser and adapted for display on mobile devices.
 :::
 
--   Awesome List for [RMarkdown tips and tricks](https://awesomeopensource.com/project/harryprince/awesome-rmarkdown)
+
+
+<font size="6">
+
+Flexdashboard example:
+
+-   [Code URL](https://testing-apps.shinyapps.io/flexdashboard-leaflet-waste/)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/00419461-eea5-49bc-b93e-7b95457a213b/access/6090)
+
+<!-- Some types of HTML formatting may be restricted depending on your email provider.  -->
+
+</font>
 
 ::: notes
+
 :::
+
+::: notes
+
+:::
+
+
 
 ## Quarto
 
@@ -244,7 +301,20 @@ Same as with RMarkdowns, Quarto is:
 -   Easy to use with ample documentation and examples
 :::
 
-## Quarto {.smaller}
+## Quarto documents {.smaller}
+
+<center>![](images/quarto.png){width="50%"}</center>
+
+<font size="6">
+
+General example:
+
+-   [Code URL](https://github.com/leesahanders/demo_reports/tree/main/examples/quarto)
+-   [Developer URL](https://colorado.posit.co/rsc/connect/#/apps/4bae0fa1-0f43-4fd7-af16-8b3e863f6d42/access/6092)
+
+</font>
+
+## Quarto presentations {.smaller}
 
 Code blocks can also be included in Quarto presentations: 
 
@@ -254,15 +324,17 @@ Code blocks can also be included in Quarto presentations:
 #| warning: false
 
 library(ggplot2)
+library(plotly)
 
-ggplot(airquality, aes(Temp, Ozone)) + 
+p <- ggplot(airquality, aes(Temp, Ozone)) + 
   geom_point() + 
   geom_smooth(method = "loess")
+
+ggplotly(p)
 ```
 
--   Awesome List for [Quarto tips and tricks](https://awesomeopensource.com/project/mcanouil/awesome-quarto) 
 
-## Quarto {.smaller}
+## Quarto: Interactive images with Lightbox {.smaller}
 
 <center>![](images/quarto-python.png){width="50%"}</center>
 
@@ -275,6 +347,34 @@ Quarto with Python and lightbox example:
 :::
 
 
+## What if I'm coming from interactive reports, like Shiny? {.smaller}
+
+
+Pros: 
+
+- Better performance because everything is pre-calculated
+
+- Ecosystem of packages for displaying interactive content within static documents
+
+Cons: 
+
+- Computations won't be happening real-time 
+
+  - Connect can schedule down to the minute - sometimes that can get you close enough to "real-time"!
+
+- Less dynamic options 
+
+
+Blending static and interactive pieces of content can open up new workflows and reporting possibilities
+
+
+## Complex workflows {.smaller}
+
+![](https://github.com/sol-eng/bike_predict/raw/main/img/arrows.drawio.png){width="70%"}
+
+::: footer
+Learn more : [Bike Predict Solutions Example](https://solutions.posit.co/gallery/bike_predict/index.html)
+:::
 
 ## Complex workflows {.smaller}
 
@@ -319,14 +419,6 @@ tidymodels <https://www.tidymodels.org/>, vetiver <https://vetiver.rstudio.com/>
 
 ## Complex workflows {.smaller}
 
-![](https://github.com/sol-eng/bike_predict/raw/main/img/arrows.drawio.png){width="70%"}
-
-::: footer
-Learn more : [Bike Predict Solutions Example](https://solutions.posit.co/gallery/bike_predict/index.html)
-:::
-
-## Complex workflows {.smaller}
-
 ::: {layout="[2, 20]"}
 ![](https://pins.rstudio.com/logo.png){width="70"}
 
@@ -342,16 +434,54 @@ Pin example:
 - [Developer URL for app](https://colorado.posit.co/rsc/connect/#/apps/a0aa6140-686c-4bc1-bb51-5596e5e99436/access)
 
 
-
-
 ## Where to go from here? {.smaller}
 
 -   Explore all the content options deployable to Connect as well as examples: [Connect User Guide](https://docs.posit.co/connect/user/)
+
+-   [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) 
 
 -   Awesome List for [RMarkdown tips and tricks](https://awesomeopensource.com/project/harryprince/awesome-rmarkdown) 
 
 -   Awesome List for [Quarto tips and tricks](https://awesomeopensource.com/project/mcanouil/awesome-quarto) 
 
 
+
 Happy Reporting!
 
+
+## Backup 
+
+## Tools in the toolbox {.smaller}
+
+::: {layout="[2, 20]"}
+![](https://github.com/rstudio/rmarkdown/blob/main/man/figures/logo.png?raw=true){width="70"}
+
+**RMarkdown** - Fully reproducible notebooks that weave together narrative text and code to produce formatted outputs.
+:::
+
+::: {layout="[2, 20]"}
+![](https://pkgs.rstudio.com/blastula/reference/figures/logo.svg){width="70"}
+
+**Blastula**
+-   Make it easy to send great looking HTML emails.
+:::
+
+
+::: {layout="[2, 20]"}
+![](https://quarto.org/quarto.png){width="60"}
+
+**quarto** - A new open-source scientific and technical publishing system that works with R, Python, Julia, Javascript, and many other languages.
+:::
+
+::: {layout="[2, 20]"}
+![](https://jupyter.org/assets/homepage/main-logo.svg){width="70"}
+
+**Jupyter**
+-   Web application for sharing computational documents. 
+:::
+
+
+
+::: notes
+
+:::
